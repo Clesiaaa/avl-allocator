@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include "../include/talloc.h"
 #include "../include/block.h"
+#include "../include/tools.h"
 
 block_t *heap_start = NULL;
 void *t_alloc(size_t size)
@@ -89,8 +90,9 @@ void *t_allocx(size_t size)
     }
 }
 
+/* REWORK
 ball_t *heap_startrd = NULL;
-void t_allocrd(void *ptr)
-{
+void *t_allocrd(size_t size) {
     printf("Not Implemented!\n");
 }
+*/

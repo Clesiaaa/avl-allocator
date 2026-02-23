@@ -14,3 +14,12 @@ void t_freex(void *ptr)
     node_t *node = (node_t*)((char *)ptr - sizeof(node_t));
     node->is_free = 1;
 }
+
+void t_freerd(void *ptr)
+{
+    //Needs to be rework
+    /*
+    ball_t *ball = (ball_t*)((char *)ptr - sizeof(ball));
+    ball->is_free = 1;
+    */
+}

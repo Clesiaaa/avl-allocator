@@ -1,4 +1,4 @@
-<div align="center"> <image src="TA.PNG" alt="Description"> </div>
+<div align="center"> <image src="TA_enhanced.PNG" alt="Description"> </div>
 
 # TurboAlloc — Enhanced Memory Allocator in C
 
@@ -10,24 +10,15 @@ A reimplementation of `malloc` and `free` in C, built as a learning project. Pro
 
 - `t_alloc` / `t_free` — linked list allocator
 - `t_allocx` / `t_freex` — binary search tree allocator
-- Block reuse on free
-- Built on top of `sbrk` for heap management
 
 ---
 
 ## UpComming Features
 
 - `t_allocrd` / `t_freerd` — AVL/Red Black tree allocator
-- `t_calloc`  — linked list callocator
-- `t_realloc`  — linked list reallocator
-- `t_dealloc`  — linked list deallocator
-- `t_callocx`  — binary search tree callocator
-- `t_reallocx`  — binary search tree reallocator
-- `t_deallocx`  — binary search tree deallocator
-- `t_callocrd`  — AVL tree callocator
-- `t_reallocrd`  — AVL tree reallocator
-- `t_deallocrd`  — AVL tree deallocator
-
+- `t_callocK`  — Enhanced callocator in LL, BST and AVLs
+- `t_reallocK`  — Enhanced reallocator in LL, BST and AVLs
+- `t_deallocK`  — Enhanced deallocator in LL, BST and AVLs
 ---
 
 ## Project Structure
