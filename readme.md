@@ -1,4 +1,4 @@
-<div align="center"> <image src="TA.PNG" alt="Description" width=300> </div>
+<div align="center"> <image src="TA.PNG" alt="Description"> </div>
 
 # TurboAlloc — Enhanced Memory Allocator in C
 
