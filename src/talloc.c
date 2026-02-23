@@ -88,3 +88,9 @@ void *t_allocx(size_t size)
         return (char*)current_node + sizeof(node_t);   
     }
 }
+
+ball_t *heap_startrd = NULL;
+void t_allocrd(void *ptr)
+{
+    printf("Not Implemented!\n");
+}

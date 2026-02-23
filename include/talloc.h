@@ -5,6 +5,7 @@
 #define TALLOC_H
 
 void *t_alloc(size_t size);
-void *t_allocx(size_t size);  
+void *t_allocx(size_t size);
+void *t_allocrd(size_t size);
 
 #endif
