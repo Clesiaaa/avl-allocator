@@ -11,5 +11,6 @@ int8_t balance(ball_t *ball);
 ball_t *delete_avl(ball_t *ball, size_t size);
 ball_t *rotate_left(ball_t *ball);
 ball_t *rotate_right(ball_t *ball);
+ball_t *equilibrate(ball_t *ball);
 
 #endif
