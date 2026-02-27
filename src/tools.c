@@ -26,6 +26,7 @@ ball_t *insert_avl(ball_t *ball, ball_t *a) {
         ball->right = insert_avl(ball->right, a);
         return equilibrate(ball);    
     }
+    return ball;
 };
 
 ball_t *equilibrate(ball_t *ball){
@@ -101,6 +102,17 @@ ball_t *successor(ball_t *ball) {
 }
 
 ball_t *min_tree(ball_t *ball) {
-    while (ball->left != NULL) ball = ball->left;
-    return ball;
+    ball_t *current_ball = ball;
+    while (current_ball->left != NULL) current_ball = current_ball->left;
+    return current_ball;
+}
+
+ball_t create_ball(size_t size) {
+    ball_t new_ball;
+    new_ball.father = NULL;
+    new_ball.left = NULL;
+    new_ball.right = NULL;
+    new_ball.is_free = 0;
+    new_ball.size = size;
+    return new_ball;
 }

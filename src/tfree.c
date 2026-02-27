@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include "../include/tfree.h"
 #include "../include/block.h"
+#include "../include/tools.h"
 
 void t_free(void *ptr)
 {
@@ -15,11 +16,9 @@ void t_freex(void *ptr)
     node->is_free = 1;
 }
 
-void t_freerd(void *ptr)
+void t_freew(void *ptr)
 {
-    //Needs to be rework
-    /*
     ball_t *ball = (ball_t*)((char *)ptr - sizeof(ball));
     ball->is_free = 1;
-    */
+    
 }

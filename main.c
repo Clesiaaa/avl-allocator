@@ -4,13 +4,13 @@
 
 int main(void) 
 {
-    int *q = (int *)t_allocx(128 * sizeof(int));
+
+    int *q = (int *)t_allocw(128 * sizeof(int));
     printf("%p\n", q);
 
     for (int i = 0; i < 128; i++) q[i] = i;
     for (int j = 0; j < 128; j++) printf("%d\n", q[j]);
 
-    t_freex(q);
-
+    t_freew(q);
     return 0;
 }
