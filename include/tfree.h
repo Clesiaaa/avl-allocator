@@ -6,6 +6,5 @@
 
 void t_free(void *ptr);
 void t_freex(void *ptr);
-void t_freew(void *ptr);
 
 #endif

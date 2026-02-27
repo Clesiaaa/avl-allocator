@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "include/talloc.h"
 #include "include/tfree.h"
+#include "include/turboalloc.h"
 
 int main(void) 
 {

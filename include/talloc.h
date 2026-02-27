@@ -7,4 +7,6 @@
 void *t_alloc(size_t size);
 void *t_allocx(size_t size);
 void *t_allocw(size_t size);
+
+void t_freew(void *ptr);
 #endif

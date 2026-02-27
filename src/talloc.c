@@ -89,21 +89,3 @@ void *t_allocx(size_t size)
         return (char*)current_node + sizeof(node_t);   
     }
 }
-
-ball_t *heap_startw = NULL;
-void *t_allocw(size_t size) {
-    
-    ball_t *current_ball = heap_startw;
-
-    if (current_ball = NULL) {
-        ball_t *new_ball_root = sbrk(size + sizeof(ball_t));
-        *new_ball_root = create_ball(size);
-        heap_startw = new_ball_root;
-        return (char *)heap_startw + sizeof(ball_t);
-    }
-
-    ball_t *new_ball = sbrk(size + sizeof(ball_t));
-    *new_ball = create_ball(size);
-    heap_startw = insert_avl(current_ball, new_ball);
-    return (char *)new_ball + sizeof(ball_t);
-}

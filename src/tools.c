@@ -69,12 +69,12 @@ ball_t *rotate_right(ball_t *ball) {
     return ball;
 };
 
-ball_t *delete_val(ball_t *ball, size_t size) {
+ball_t *delete_avl(ball_t *ball, size_t size) {
     if (ball == NULL) return ball;
     if (size < ball->size) {
-        ball->left = delete_val(ball->left, size);
+        ball->left = delete_avl(ball->left, size);
     } else if (size > ball->size) {
-        ball->right = delete_val(ball->right, size);   
+        ball->right = delete_avl(ball->right, size);   
     } else {
         if (ball->left != NULL && ball->right == NULL) {
             return ball->left;                          
@@ -85,10 +85,10 @@ ball_t *delete_val(ball_t *ball, size_t size) {
         } else {
             ball_t *succ = successor(ball);
             ball->size = succ->size;
-            ball->right = delete_val(ball->right, succ->size); 
+            ball->right = delete_avl(ball->right, succ->size); 
         }
     }
-    return equilibrate(ball);
+    return ball;
 }
 ball_t *successor(ball_t *ball) {
     if (ball->right != NULL) return min_tree(ball->right);

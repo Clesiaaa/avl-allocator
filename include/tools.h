@@ -15,5 +15,5 @@ ball_t *equilibrate(ball_t *ball);
 ball_t *min_tree(ball_t *ball);
 ball_t *successor(ball_t *ball);
 ball_t create_ball(size_t size);
-ball_t find_free(void);
+
 #endif

@@ -16,9 +16,10 @@ void t_freex(void *ptr)
     node->is_free = 1;
 }
 
+/*
 void t_freew(void *ptr)
 {
     ball_t *ball = (ball_t*)((char *)ptr - sizeof(ball));
     ball->is_free = 1;
-    
 }
+*/
